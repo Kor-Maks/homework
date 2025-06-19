@@ -1,0 +1,36 @@
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  max-height: 600px;
+  border: 1px solid #000;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 10px 200px 0 5px;
+  overflow: auto;
+  background: #ebeaea;
+}
+
+section {
+  display: inline-block;
+  margin: 0 15px 20px 0;
+  width: 280px;
+  
+}
+
+div {
+  padding: 20px 20px;
+  background: #d6ba99;
+  border-radius: 20px;
+  box-shadow: inset 0px 0px 10px #333;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+}
