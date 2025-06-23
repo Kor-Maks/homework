@@ -1,0 +1,38 @@
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 5rem;
+    padding-top: 5vh;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+}
+
+/* ====================================================== */
+
+.title::before,
+.title::after {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+.title::before {
+    background: #e15757;
+    transform: translate(-50%, 25%);
+}
+
+.title::after {
+    background: #5849dd;
+    transform: translate(50%, 25%);
+}
