@@ -1,0 +1,188 @@
+body {
+  background-color: #333;
+}
+
+.wrapper {
+  padding: 50px;
+
+}
+
+.container {
+  position: relative;
+  height: 900px;
+  background-color: #444;
+}
+
+.block {
+  background-color: #fff;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.steps {
+  display: flex;
+  align-items: flex-end;
+  padding-top: 100px;
+}
+
+.step {
+  width: 100px;
+  background: #f66a6a;
+}
+
+.step1 {
+  width: 200px;
+  height: 800px;
+  background: #f66a6a;
+}
+
+.step2 {
+  height: 700px;
+}
+
+.step3 {
+  height: 600px;
+}
+
+.step4 {
+  height: 500px;
+}
+
+.step5 {
+  height: 400px;
+}
+
+.step6 {
+  height: 300px;
+}
+
+.step7 {
+  height: 200px;
+}
+
+.step8 {
+  height: 100px;
+}
+
+.text {
+  color: #fff;
+  font-size: 2em;
+}
+
+/* -------------------------- */
+.block {
+  animation: move-block 4s .5s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.block:active {
+  animation-play-state: running;
+  animation-name: none;
+}
+
+@keyframes move-block {
+  0% {
+    left: 0;
+    top: 0;
+  }
+
+  10% {
+    left: 200px;
+    top: 0;
+  }
+
+  11% {
+    left: 200px;
+    top: 100px;
+    background-color: #954e4e;
+  }
+
+  20% {
+    left: 300px;
+    top: 100px;
+    background-color: #e69443;
+  }
+
+  21% {
+    left: 300px;
+    top: 200px;
+  }
+
+  30% {
+    left: 400px;
+    top: 200px;
+    background-color: #72e124;
+  }
+
+  31% {
+    left: 400px;
+    top: 300px;
+  }
+
+  40% {
+    left: 500px;
+    top: 300px;
+    background-color: #16dce0;
+  }
+
+  41% {
+    left: 500px;
+    top: 400px;
+  }
+
+  50% {
+    left: 600px;
+    top: 400px;
+    background-color: #142fe1;
+  }
+
+  51% {
+    left: 600px;
+    top: 500px;
+  }
+
+  60% {
+    left: 700px;
+    top: 500px;
+    background-color: #b412f4;
+  }
+
+  61% {
+    left: 700px;
+    top: 600px;
+  }
+
+  70% {
+    left: 800px;
+    top: 600px;
+    background-color: #eb0fc2;
+  }
+
+  71% {
+    left: 800px;
+    top: 700px;
+  }
+
+  80% {
+    left: 900px;
+    top: 700px;
+    background-color: #e96262;
+  }
+
+  81% {
+    left: 900px;
+    top: 800px;
+  }
+
+  90% {
+    left: calc(100% - 100px);
+    top: 800px;
+  }
+
+  100% {
+    left: calc(100% - 200px);
+    top: 800px;
+  }
+}
