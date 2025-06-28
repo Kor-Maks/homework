@@ -174,8 +174,7 @@ html, body {
   font-weight: 500;
   max-width: 282px;
   width: 100%;
-  min-height: 60vh;
-  /* max-height: 60vh; */
+  max-height: 60vh;
 }
 
 .sidebar__item {
