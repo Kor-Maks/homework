@@ -40,7 +40,7 @@
 
     const target = e.target;
     
-    if (target.closest('.modal__cancel') || target.classList.contains('modal')) { // проверяет имеетли элемент по которому мы кликнули или его родитель класс ('.modal__cancel') либо bvttn kb элемеент класс ('.modal')
+    if (target.closest('.modal__cancel') || target.classList.contains('modal')) { // проверяет имеет ли элемент по которому мы кликнули либо его родитель класс ('.modal__cancel') или имеет ли элемеент класс ('.modal')
       document.body.classList.remove('body--opened-modal');
     }
   }
