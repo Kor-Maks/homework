@@ -30,7 +30,7 @@
   openModal.addEventListener('click', open);
   
   function open(e) {
-    e.preventDefault(); // функция отменяет дефолтное поведение! 
+    e.preventDefault();
     document.body.classList.toggle('body--opened-modal');
   }
   
@@ -41,7 +41,7 @@
 
     const target = e.target;
     
-    if (target.closest('.modal__cancel') || target.classList.contains('modal')) { // проверяет имеет ли элемент по которому мы кликнули либо его родитель класс ('.modal__cancel') или имеет ли элемеент класс ('.modal')
+    if (target.closest('.modal__cancel') || target.classList.contains('modal')) { 
       document.body.classList.remove('body--opened-modal');
     }
   }
@@ -60,8 +60,8 @@
     e.preventDefault(); 
     if (tabControl.classList.contains('tab__controls-link--active')) return;
     
-    const tabContentId = tabControl.getAttribute('href'); // показывает значение атрибута href, кнопки, на которую мы нажали
-    const tabContent = document.querySelector(tabContentId); // в tabContentId записывается значение атрибута href, который в свою очередь ссылается на ID соответствующего тэга
+    const tabContentId = tabControl.getAttribute('href'); 
+    const tabContent = document.querySelector(tabContentId); 
     const activeContent = document.querySelector('.tab-content--show');
     const activeControl = document.querySelector('.tab__controls-link--active')
 
@@ -75,10 +75,8 @@
 
   // ------------------ ACCORDION -----------------------
 
-  // записывает в переменную все аккордеон листы на странице
   const accordionLists = document.querySelectorAll('.accordion-list');
 
-  // обходит все элементы и для каждого навешивает обработчик события "клик"
   accordionLists.forEach(el => {
     
     !!!!!!!!!!!!!!// document.querySelector('.accordion-list__item--opened .accordion-list__content').style.maxHeight = document.querySelector('.accordion-list__item--opened .accordion-list__content').scrollHeight + 'px';
@@ -89,28 +87,21 @@
       const accordionOpenedItem = accordionList.querySelector('.accordion-list__item--opened');
       const accordionOpenedContent = accordionList.querySelector('.accordion-list__item--opened .accordion-list__content');
       
-      // делегирование. Записываем в переменную куда мы кликнули
       const accordionControl = e.target.closest('.accordion-list__control');
       if (!accordionControl) return;
 
-        // записываем в переменную метод, который выбирает родителя кнопки по которой мы кликнули
         const accordionItem = accordionControl.parentElement;
-        // записываем в переменную метод, который выбирает следующий не дочерний элемент кнопки по которой мы кликнули
         const accordionContent = accordionControl.nextElementSibling;
 
         if (accordionOpenedItem && accordionItem != accordionOpenedItem) {
           accordionOpenedItem.classList.remove('accordion-list__item--opened');
           accordionOpenedContent.style.maxHeight = null;
         }
-        // навешиваем класс для родителя этой кнопки
         accordionItem.classList.toggle('accordion-list__item--opened');
-      // проверяем есть ли класс .accordion-list__item--opened у кнопки
       if (accordionItem.classList.contains('accordion-list__item--opened')) {
-        // проверяем высоту контента как полноценную и увеличиваем его высоту
         accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
       }
       else {
-        // если класса нет принимается значениее ноль
         accordionContent.style.maxHeight = null;
       }
     });
