@@ -121,19 +121,16 @@
     spaceBetween: 15,
     slidesPerView: 1.5,
 
-    // покадровая навигация
     pagination: {
       el: '.gallery__pagination',
       type: 'fraction',
     },
-    
-    // стрелочки
+   
     navigation: {
       nextEl: '.gallery__next',
       prevEl: '.gallery__prev',
     },
 
-    // как медиазапросы только работают в порядке возростания
     breakpoints: {
       601: {
         slidesPerView: 3,
