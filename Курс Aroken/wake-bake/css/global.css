@@ -120,7 +120,7 @@
 }
 
 .modal__cancel path,
-.modal__cancel:hover rect {
+.modal__cancel rect {
   transition: var(--transition);
 }
 
