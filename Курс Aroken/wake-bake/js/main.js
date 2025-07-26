@@ -114,23 +114,27 @@
     });
   });
 
-  // Slider - gallery
+  //---------------------- Slider - gallery------------------
+
   
-  const swiper = new Swiper('.gallery__slider', {
+  new Swiper('.gallery__slider', {
     
     spaceBetween: 15,
     slidesPerView: 1.5,
 
+    // покадровая навигация
     pagination: {
       el: '.gallery__pagination',
       type: 'fraction',
     },
-   
+    
+    // стрелочки
     navigation: {
       nextEl: '.gallery__next',
       prevEl: '.gallery__prev',
     },
 
+    // как медиазапросы только работают в порядке возростания
     breakpoints: {
       601: {
         slidesPerView: 3,
@@ -142,7 +146,33 @@
         slidesPerView: 4,
       }
     }
-
   });
-  
+
+  // Testimonials slider
+
+  new Swiper('.testimonials__slider', {
+    
+    spaceBetween: 0,
+    slidesPerView: 1,
+    centeredSlides: true,
+    
+    navigation: {
+      nextEl: '.testimonials__next',
+      prevEl: '.testimonials__prev',
+    },
+
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      draggable: true,
+    },
+
+    breakpoints: {
+      901: {
+        slidesPerView: 1.5,
+      },
+      1201: {
+        slidesPerView: 2,
+      }
+    }
+  });
 })()

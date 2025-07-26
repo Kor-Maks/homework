@@ -44,7 +44,8 @@
 }
 
 .main__program,
-.main__gallery {
+.main__gallery,
+.main__testimonials {
   padding-bottom: 145px;
 }
 
