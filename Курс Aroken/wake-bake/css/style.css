@@ -62,7 +62,7 @@
   position: absolute;
   inset: 5px;
   /* растягиваем псевдоэлемент на всего родителя и отступаем 5px */
-  border: 1px solid var(--accent-text-2);
+  border: 1px solid var(--accent-color-2);
   border-radius: 50%;
   opacity: 0;
   transition: var(--transition);
@@ -252,7 +252,7 @@
 .accordion-content__title {
   text-transform: uppercase;
   line-height: 1.6;
-  color: var(--accent-text-2);
+  color: var(--accent-color-2);
   margin-bottom: 20px;
 }
 
@@ -269,7 +269,7 @@
   flex-shrink: 0;
   width: 24px;
   height: 24px;
-  border: 1px solid var(--accent-text-2);
+  border: 1px solid var(--accent-color-2);
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
@@ -337,7 +337,7 @@
 .program__price-text {
   line-height: 160%;
   text-transform: uppercase;
-  color: var(--accent-text-2);
+  color: var(--accent-color-2);
   margin-bottom: 5px;
 }
 
@@ -611,7 +611,7 @@
 }
 
 .testimonials__student-inst {
-  color: var(--accent-text-2);
+  color: var(--accent-color-2);
 }
 
 .testimonials__quote span {
