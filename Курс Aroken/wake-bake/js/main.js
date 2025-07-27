@@ -127,12 +127,14 @@
       el: '.gallery__pagination',
       type: 'fraction',
     },
-  
+    
+    // стрелочки
     navigation: {
       nextEl: '.gallery__next',
       prevEl: '.gallery__prev',
     },
 
+    // как медиазапросы только работают в порядке возростания
     breakpoints: {
       601: {
         slidesPerView: 3,
@@ -173,4 +175,11 @@
       }
     }
   });
+
+  // Маска для телефона
+
+  const telInputs = document.querySelectorAll('input[type="tel"]');
+  const im = new Inputmask('+7 (999) 999-99-99');
+  im.mask(telInputs);
+
 })()

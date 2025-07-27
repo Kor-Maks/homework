@@ -62,7 +62,7 @@
   position: absolute;
   inset: 5px;
   /* растягиваем псевдоэлемент на всего родителя и отступаем 5px */
-  border: 1px solid #CEAAD0;
+  border: 1px solid var(--accent-text-2);
   border-radius: 50%;
   opacity: 0;
   transition: var(--transition);
@@ -252,7 +252,7 @@
 .accordion-content__title {
   text-transform: uppercase;
   line-height: 1.6;
-  color: #ceaad0;
+  color: var(--accent-text-2);
   margin-bottom: 20px;
 }
 
@@ -269,7 +269,7 @@
   flex-shrink: 0;
   width: 24px;
   height: 24px;
-  border: 1px solid #CEAAD0;
+  border: 1px solid var(--accent-text-2);
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
@@ -337,7 +337,7 @@
 .program__price-text {
   line-height: 160%;
   text-transform: uppercase;
-  color: #ceaad0;
+  color: var(--accent-text-2);
   margin-bottom: 5px;
 }
 
@@ -554,8 +554,7 @@
   fill: var(--general-bg);
 }
 
-.testimonials__slider {
-}
+.testimonials__slider {}
 
 .testimonials__wrapper {
   margin-bottom: 40px;
@@ -612,7 +611,7 @@
 }
 
 .testimonials__student-inst {
-  color: #ceaad0;
+  color: var(--accent-text-2);
 }
 
 .testimonials__quote span {
@@ -635,6 +634,137 @@
   background: var(--accent-color);
 }
 
+/* ============================================================ */
+
+.contact {
+  padding: 140px 0;
+  background: url("../img/decor/bg-contact.png") 50% 0 / cover no-repeat;
+}
+
+.contact__inner {
+  display: flex;
+  align-items: end;
+  gap: 84px;
+  position: relative;
+}
+
+.contact__img {
+}
+.contact__inner::before {
+  content: url("../img/decor/berries-1.png");
+  position: absolute;
+  top: -6%;
+  left: 0%;
+}
+.contact__inner::after {
+  content: url("../img/decor/berries-2.png");
+  position: absolute;
+  top: 6%;
+  right: 0%;
+}
+
+.contact__img img {
+  width: 100%;
+  filter: drop-shadow(0px 4px 30px #c6b0a14d);
+}
+
+.contact__body {
+  max-width: 420px;
+}
+
+.contact__title {
+  margin-bottom: 20px;
+}
+
+.contact__text {
+  margin-bottom: 40px;
+}
+
+.contact__form {}
+
+.contact__label {
+  margin-bottom: 10px;
+}
+
+.field {}
+
+.field__input {}
+
+.contact__input {
+  display: block;
+  border: 1px solid #ac907a;
+  border-radius: 100px;
+  padding: 19px 28px;
+  width: 100%;
+  background: transparent;
+  font-size: 16px;
+  transition: var(--transition);
+  margin-bottom: 20px;
+}
+
+.contact__input:hover {
+  border-color: var(--accent-color);
+}
+
+.contact__input::placeholder {
+  color: #AC907A;
+  transition: var(--transition);
+}
+
+.contact__input:hover::placeholder {
+  color: var(--accent-color);
+}
+
+.contact__check-label {
+  display: flex;
+  gap: 5px;
+  align-items: start;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.contact__check-label a {
+  text-decoration: underline;
+  transform: var(--transition);
+}
+
+.contact__check-label a:hover  {
+  color: var(--accent-color);
+}
+
+.contact__checkbox {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid var(--input-color);
+  border-radius: 4px;
+  transition: var(--transition);
+  flex-shrink: 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.contact__checkbox::before {
+  content:"";
+  position: absolute;
+  inset: 0;
+  background: url("../img/icons/check.svg") 50% 50% no-repeat;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.contact__checkbox:hover {
+  border: 1.5px solid var(--accent-color);
+}
+
+.contact__checkbox:checked {
+  background:  var(--accent-color);
+  border: 1.5px solid var(--accent-color);
+  opacity: 1;
+}
+.contact__checkbox:checked::before {
+  opacity: 1;
+}
 
 /* =================================== АДАПТИВ ====================================== */
 /* =================================================================================== */
@@ -675,6 +805,18 @@
     flex-direction: column;
     align-items: start;
   }
+
+  /* --------------------------------------------- */
+
+  .contact__inner::after {
+    top: -20%;
+  }
+
+  .contact__inner {
+    align-items: center;
+    gap: 30px;
+  }
+
 }
 
 
@@ -794,6 +936,17 @@
     margin: 0 auto;
   }
 
+  /* /------------------------------------- */
+
+  .contact__inner {
+  align-items: center;
+  flex-direction: column;
+  }
+
+  .contact__img {
+    display: none;
+  }
+
 }
 
 
@@ -869,6 +1022,12 @@
 
   .testimonials__nav {
     align-self: end;
+  }
+
+  /* ---------------------------------- */
+
+  .contact__inner::before {
+    display: none;
   }
 }
 
@@ -984,6 +1143,15 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+
+  .contact__title,
+  .contact__text {
+    text-align: center;
+  }
+
+  .contact {
+    padding-bottom: 80px;
   }
 }
 
