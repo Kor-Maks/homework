@@ -173,34 +173,6 @@ new Swiper('.gallery__slider4' , {
 
 // ТАБЫ------------------------------------
 
-// const tabControls = document.querySelector('.tab__controls');
-
-//   tabControls.addEventListener('click', toggleTab);
-
-//   function toggleTab(e) {
-    
-//     const tabControl = e.target.closest('.tab__controls-link');
-    
-//     if (!tabControl) return;
-//     e.preventDefault(); 
-//     if (tabControl.classList.contains('tab__controls-link--active')) return;
-    
-//     const tabContentId = tabControl.getAttribute('href'); // показывает значение атрибута href, кнопки, на которую мы нажали
-//     const tabContent = document.querySelector(tabContentId); // в tabContentId записывается значение атрибута href, который в свою очередь ссылается на ID соответствующего тэга
-//     const activeContent = document.querySelector('.tab-content--show');
-//     const activeControl = document.querySelector('.tab__controls-link--active')
-
-
-//     activeContent.classList.remove('tab-content--show');
-//     tabContent.classList.add('tab-content--show')
-
-//     activeControl.classList.remove('tab__controls-link--active');
-//     tabControl.classList.add('tab__controls-link--active')
-//   };
-
-
-
-
   const tabs = document.querySelectorAll(".tab__controls-item");
     const descriptions = document.querySelectorAll(".gallery__param");
     const galleries = document.querySelectorAll(".tab-content");
@@ -225,3 +197,4 @@ new Swiper('.gallery__slider4' , {
     });
 
 })()
+
