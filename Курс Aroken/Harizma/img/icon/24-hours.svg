@@ -1,0 +1,64 @@
+<svg width="269.000000" height="273.000000" viewBox="0 0 269 273" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_51_1005_dd" x="28.916016" y="136.858856" width="211.071777" height="34.180023" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0" dy="4"/>
+			<feGaussianBlur stdDeviation="1.33333"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_1" result="shape"/>
+		</filter>
+		<filter id="filter_51_1006_dd" x="106.000000" y="0.000000" width="56.000000" height="56.000000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0" dy="4"/>
+			<feGaussianBlur stdDeviation="1.33333"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_1" result="shape"/>
+		</filter>
+		<clipPath id="clip51_1006">
+			<rect id="icons8_last_24_hours 1" rx="0.000000" width="47.000000" height="47.000000" transform="translate(110.500000 0.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<radialGradient gradientTransform="translate(134 138) rotate(90) scale(122 122)" cx="0.000000" cy="0.000000" r="1.000000" id="paint_angular_51_1001_0" gradientUnits="userSpaceOnUse">
+			<stop offset="0.489041" stop-color="#F69020" stop-opacity="0.000000"/>
+			<stop offset="0.503497" stop-color="#FFC619"/>
+		</radialGradient>
+		<radialGradient gradientTransform="translate(134.5 138.5) rotate(90) scale(134.5 134.5)" cx="0.000000" cy="0.000000" r="1.000000" id="paint_angular_51_1002_0" gradientUnits="userSpaceOnUse">
+			<stop offset="0.489041" stop-color="#FFC619" stop-opacity="0.000000"/>
+			<stop offset="0.503497" stop-color="#FFC619"/>
+		</radialGradient>
+		<radialGradient gradientTransform="translate(134 139) rotate(90) scale(96 96)" cx="0.000000" cy="0.000000" r="1.000000" id="paint_angular_51_1003_0" gradientUnits="userSpaceOnUse">
+			<stop offset="0.489041" stop-color="#F69020" stop-opacity="0.000000"/>
+			<stop offset="0.503497" stop-color="#F69020"/>
+		</radialGradient>
+		<linearGradient x1="134.000000" y1="136.618866" x2="134.000000" y2="176.211319" id="paint_linear_51_1005_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#FFC619"/>
+			<stop offset="1.000000" stop-color="#F69020"/>
+		</linearGradient>
+	</defs>
+	<circle id="Ellipse 3" cx="134.000000" cy="138.000000" r="122.000000" fill="#FFC619" fill-opacity="0.190000"/>
+	<circle id="Ellipse 5" cx="134.000000" cy="138.000000" r="122.000000" fill="#FFC619" fill-opacity="0"/>
+	<circle id="Ellipse 5" cx="134.000000" cy="138.000000" r="118.500000" stroke="url(#paint_angular_51_1001_0)" stroke-opacity="0.660000" stroke-width="7.000000"/>
+	<circle id="Ellipse 6" cx="134.500000" cy="138.500000" r="134.500000" fill="#FFC619" fill-opacity="0"/>
+	<circle id="Ellipse 6" cx="134.500000" cy="138.500000" r="133.500000" stroke="url(#paint_angular_51_1002_0)" stroke-opacity="0.400000" stroke-width="2.000000"/>
+	<circle id="Ellipse 7" cx="134.000000" cy="139.000000" r="96.000000" fill="#FFC619" fill-opacity="0"/>
+	<circle id="Ellipse 7" cx="134.000000" cy="139.000000" r="95.000000" stroke="url(#paint_angular_51_1003_0)" stroke-opacity="0.400000" stroke-width="2.000000"/>
+	<g filter="url(#filter_51_1006_dd)">
+		<rect id="icons8_last_24_hours 1" rx="0.000000" width="47.000000" height="47.000000" transform="translate(110.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+		<g clip-path="url(#clip51_1006)">
+			<path id="Vector" d="M117 24C117 33.4 124.6 41 134 41C143.39 41 151 33.4 151 24C151 14.6 143.39 7 134 7C124.6 7 117 14.6 117 24Z" fill="#131517" fill-opacity="1.000000" fill-rule="nonzero"/>
+			<path id="Vector" d="M134 44C123 44 114 35 114 24C114 13 123 4 134 4C138.7 4 143.3 5.7 146.89 8.79L144.3 11.8C141.5 9.29 137.8 8 134 8C125.2 8 118 15.2 118 24C118 32.8 125.2 40 134 40L134 44Z" fill="#606571" fill-opacity="1.000000" fill-rule="nonzero"/>
+			<path id="Vector" d="M137 12L129 6L137 0L137 12Z" fill="#FFC619" fill-opacity="1.000000" fill-rule="nonzero"/>
+			<path id="Vector" d="M121 24C121 24.6 120.6 25 120 25L117 25L117 23L120 23C120.6 23 121 23.4 121 24ZM134 37C133.39 37 133 37.4 133 38L133 41L135 41L135 38C135 37.4 134.6 37 134 37ZM148 23C147.39 23 147 23.4 147 24C147 24.6 147.39 25 148 25L151 25L151 23L148 23Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+			<path id="Vector" d="M134 44C123 44 114 35 114 24C114 19.29 115.7 14.7 118.8 11.1L121.8 13.7C119.3 16.5 118 20.2 118 24C118 32.8 125.2 40 134 40C142.8 40 150 32.8 150 24C150 15.2 142.8 8 134 8L134 4C145 4 154 13 154 24C154 35 145 44 134 44Z" fill="#FFC619" fill-opacity="1.000000" fill-rule="nonzero"/>
+			<path id="Vector" d="M133 30L125 30L125 28.2L128.8 24.2C129.7 23.1 130.2 22.3 130.2 21.7C130.2 21.2 130.1 20.8 129.89 20.5C129.7 20.2 129.39 20.1 128.89 20.1C128.5 20.1 128.1 20.29 127.9 20.6C127.6 21 127.5 21.4 127.5 21.9L125 21.9C125 21.2 125.2 20.5 125.5 19.9C125.9 19.29 126.4 18.79 127 18.5C127.6 18.2 128.1 18 128.89 18C130.2 18 131.2 18.29 131.89 18.9C132.6 19.5 132.89 20.29 132.89 21.4C132.89 21.9 132.8 22.3 132.6 22.8C132.39 23.2 132.2 23.7 131.8 24.2C131.39 24.7 130.8 25.3 130 26.1L128.6 28L133 28L133 30ZM141.8 26L143 26L143 28L141.8 28L141.8 30L139 30L139 28L134.39 28L134.2 26.4L139 18L141.8 18L141.8 26ZM136.8 26L139 26L139 21.6L138.8 21.9L136.8 26Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		</g>
+	</g>
+</svg>
