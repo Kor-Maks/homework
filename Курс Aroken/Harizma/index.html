@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harisma</title>
+  <link href="./css/reset.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/swiper-bundle.min.css" rel="stylesheet">
+</head>
+
+<body class="body">
+  <div class="wrapper">
+    <header class="header">
+      <div class="stripes-container">
+        <div class="stripe stripe-header1"></div>
+        <div class="stripes__square-header"></div>
+        <div class="stripe stripe-header2"></div>
+        <div class="stripe stripe-header3"></div>
+        <div class="stripe stripe-header4"></div>
+      </div>
+      <section class="header__top">
+        <div class="container">
+          <div class="header__inner">
+            <a class="header__logo">
+              <img src="./img/icon/logo.svg" alt="Логотип компании">
+            </a>
+            <div class="header__info">
+              <div class="header__contacts">
+                <address class="header__contact header__tel">
+                  <div class="header__img">
+                    <img src="./img/icon/fone.svg" alt="">
+                  </div>
+                  <a class="header__number" href="tel:+380979709090">
+                    +38 (097) 970-90-90
+                  </a>
+                </address>
+                <address class="header__contact header__metro">
+                  <div class="header__img">
+                    <img src="./img/icon/gps-mark.svg" alt="">
+                  </div>
+                  <span>м. Лубянка</span>
+                </address>
+              </div>
+              <div class="header__btns">
+                <a class="header__button button-empty" href="#">
+                  Наши залы
+                </a>
+                <a class="header__button button-white" href="#">
+                  Забронировать
+                </a>
+              </div>
+            </div>
+            <div class="header__metro--visible">
+              <div class="header__img">
+                <img src="./img/icon/gps-mark.svg" alt="">
+              </div>
+              <span>м. Лубянка</span>
+            </div>
+            <a class="burger__icon" href="#">
+              <span class="upper"></span>
+              <span class="lower"></span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="main__hero hero">
+        <div class="container">
+          <div class="hero__inneer">
+            <div class="hero__body">
+              <h1 class="hero__subtitle">
+                Арендуй Караоке-Зал до 10 человек
+              </h1>
+              <h2 class="hero__title">
+                возьми алкоголь
+                <hr> и еду с собой
+                <span>м. Лубянка</span>
+              </h2>
+              <div class="hero__icons">
+                <div class="hero__icon">
+                  <img src="./img/icon/check.svg" alt="">
+                  Если хочешь попеть <br> и оторваться
+                </div>
+                <div class="hero__icon">
+                  <img src="./img/icon/check.svg" alt="">
+                  Отдохнуть <br> после работы
+                </div>
+                <div class="hero__icon">
+                  <img src="./img/icon/check.svg" alt="">
+                  Хорошо <br> провести время
+                </div>
+                <div class="hero__scroll-down">
+                  Листайте вниз
+                </div>
+              </div>
+              <a class="hero__button button" href="#">Забронировать онлайн</a>
+            </div>
+            <div class="hero__img-girl">
+              <img src="./img/hero/girl.png" alt="Танцующая девушка">
+              <div class="hero__telegram">
+                Связаться с нами
+                <a class="hero__telegram-icon" href="#">
+                  <img src="./img/icon/telegram.svg" alt="">
+                </a>
+              </div>
+              <div class="hero__img-wrapper">
+                <div class="hero__img-label">
+                  <img src="./img/hero/badge.png" alt="">
+                  <div class="hero__img-label-text">
+                    Можно шуметь
+                    <span>Круглосуточно</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="header__bottom">
+        <div class="container">
+          <ul class="header__bottom-inner">
+            <li class="header__bottom-item">
+              <img src="./img/icon/microfone.svg" alt="">
+              <div class="header__bottom-line"></div>
+              Профессиональное <br>
+              караоке AST-50
+            </li>
+            <li class="header__bottom-item item--black">
+              <img src="./img/icon/shampain.svg" alt="">
+              <div class="header__bottom-line"></div>
+              Без пробкового сбора
+            </li>
+            <li class="header__bottom-item">
+              <img src="./img/icon/hend-money.svg" alt="">
+              <div class="header__bottom-line"></div>
+              Без депозита
+            </li>
+            <li class="header__bottom-item item--black header__bottom-last">
+              <img src="./img/icon/salute.svg" alt="">
+              <div class="header__bottom-line"></div>
+              Скидка <br>
+              в День Рождения
+            </li>
+          </ul>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="main__gallery gallery">
+        <div class="stripes-container">
+          <div class="stripe stripe-gallery"></div>
+        </div>
+        <div class="container">
+          <div class="gallery__inner">
+            <div class="gallery__content">
+              <div class="gallery__heading__controls">
+                <div class="gallery__heading heading">
+                  <h2 class="gallery__title heading__title">Наши залы</h2>
+                  <p class="gallery__text heading__text">Ознакомтесь с атмосферой праздника </p>
+                </div>
+                <ul class="tab__controls">
+                  <li class="tab__controls-item" data-tab="1">
+                    <button class="tab__controls-link tab__controls-link--active" data-tab="1">
+                      HALL №1
+                    </button>
+                  </li>
+                  <li class="tab__controls-item" data-tab="2">
+                    <button class="tab__controls-link" data-tab="2">
+                      HALL №2
+                    </button>
+                  </li>
+                  <li class="tab__controls-item" data-tab="3">
+                    <button href="#" class="tab__controls-link" data-tab="3">
+                      HALL №3
+                    </button>
+                  </li>
+                  <li class="tab__controls-item" data-tab="4">
+                    <button href="#" class="tab__controls-link" data-tab="4">
+                      HALL №5
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab__param">
+                <ul class="gallery__param tab-content--show" data-tab="1">
+                  <li class="gallery__param-list">
+                    <div class="gallery__param-item param-item1">
+                      <div class="gallery__param-img">
+                        <img src="./img/halls/icons-1.svg" alt="">
+                      </div>
+                      № 1
+                    </div>
+                    <div class="gallery__param-item param-item2">
+                      <div class="gallery__param-img">
+                        <img src="./img/halls/icons-2.svg" alt="">
+                      </div>
+                      40 м2
+                    </div>
+                    <div class="gallery__param-item param-item3">
+                      <div class="gallery__param-img">
+                        <img src="./img/halls/icons-3.svg" alt="">
+                      </div>
+                      до 20-ти человек
+                    </div>
+                  </li>
+                </ul>
+                <ul class="gallery__param" data-tab="2">
+                  <li class="gallery__param-list">
+                    <div class="gallery__param-item param-item1">
+                      <div class="gallery__param-img">
+                        <img src="./img/halls/icons-1.svg" alt="">
+                      </div>
+                      № 2
+                    </div>
+                    <div class="gallery__param-item param-item2">
+                      <div class="gallery__param-img">
+                        <img src="./img/halls/icons-2.svg" alt="">
+                      </div>
+                      40 м2
+                    </div>
+                    <div class="gallery__param-item param-item3">
+                      <div class="gallery__param-img">
+                        <img src="./img/halls/icons-3.svg" alt="">
+                      </div>
+                      до 20-ти человек
+                    </div>
+                  </li>
+                </ul>
+                <ul class="gallery__param" data-tab="3">
+                  <li class="gallery__param-list">
+                    <div class="gallery__param-item param-item1">
+                      <div class="gallery__param-img">
+                        <img src="./img/halls/icons-1.svg" alt="">
+                      </div>
+                      № 3
+                    </div>
+                    <div class="gallery__param-item param-item2">
+                      <div class="gallery__param-img">
+                        <img src="./img/halls/icons-2.svg" alt="">
+                      </div>
+                      40 м2
+                    </div>
+                    <div class="gallery__param-item param-item3">
+                      <div class="gallery__param-img">
+                        <img src="./img/halls/icons-3.svg" alt="">
+                      </div>
+                      до 20-ти человек
+                    </div>
+                  </li>
+                </ul>
+                <ul class="gallery__param" data-tab="4">
+                  <li class="gallery__param-list">
+                    <div class="gallery__param-item param-item1">
+                      <div class="gallery__param-img">
+                        <img src="./img/halls/icons-1.svg" alt="">
+                      </div>
+                      № 5
+                    </div>
+                    <div class="gallery__param-item param-item2">
+                      <div class="gallery__param-img">
+                        <img src="./img/halls/icons-2.svg" alt="">
+                      </div>
+                      40 м2
+                    </div>
+                    <div class="gallery__param-item param-item3">
+                      <div class="gallery__param-img">
+                        <img src="./img/halls/icons-3.svg" alt="">
+                      </div>
+                      до 20-ти человек
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="gallery__nav">
+                <button class="gallery__prev arrow">
+                  <svg width="11.862793" height="18.793640" viewBox="0 0 11.8628 18.7936" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <desc>
+                      Created with Pixso.
+                    </desc>
+                    <defs />
+                    <path id="Vector" d="M10.43 1.39L1.43 10.61M10.43 17.39L1.43 8.17" stroke="#606571"
+                      stroke-opacity="1.000000" stroke-width="4.000000" />
+                  </svg>
+                </button>
+                <div class="gallery__pagination"></div>
+                <button class="gallery__next arrow">
+                  <svg width="11.862793" height="18.793640" viewBox="0 0 11.8628 18.7936" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <desc>
+                      Created with Pixso.
+                    </desc>
+                    <defs />
+                    <path id="Vector" d="M1.43 1.39L10.43 10.61M1.43 17.39L10.43 8.17" stroke="#606571"
+                      stroke-opacity="1.000000" stroke-width="4.000000" />
+                  </svg>
+                </button>
+              </div>
+              <a class="gallery__button button" href="#">
+                Забронировать
+              </a>
+            </div>
+
+            <div class="tab__gallery">
+              <div class="tab-content tab-content--show" data-tab="1">
+                <div class="gallery__slider gallery__slider1 swiper">
+                  <div class="gallery__wrapper swiper-wrapper">
+                    <div class="gallery__slide swiper-slide">
+                      <a class="gallery__img" href="./img/halls/1.jpeg" data-fslightbox="gallery">
+                        <img src="./img/halls/1.jpeg" alt="Караоке-Зал">
+                      </a>
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <a class="gallery__img" href="./img/halls/2.jpeg" data-fslightbox="gallery">
+                        <img src="./img/halls/2.jpeg" alt="Караоке-Зал">
+                      </a>
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <a class="gallery__img" href="./img/halls/3.jpeg" data-fslightbox="gallery">
+                        <img src="./img/halls/3.jpeg" alt="Караоке-Зал">
+                      </a>
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <a class="gallery__img" href="./img/halls/4.jpeg" data-fslightbox="gallery">
+                        <img src="./img/halls/4.jpeg" alt="Караоке-Зал">
+                      </a>
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <a class="gallery__img" href="./img/halls/5.jpeg" data-fslightbox="gallery">
+                        <img src="./img/halls/5.jpeg" alt="Караоке-Зал">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="gallery__mini-slider gallery__mini-slider1 swiper">
+                    <div class="gallery__mini-wrapper swiper-wrapper">
+                      <div class="gallery__mini-slide swiper-slide">
+                        <div class="gallery__mini-img">
+                          <img src="./img/halls/1.jpeg" alt="Караоке-Зал">
+                        </div>
+                      </div>
+                      <div class="gallery__mini-slide swiper-slide">
+                        <div class="gallery__mini-img">
+                          <img src="./img/halls/2.jpeg" alt="Караоке-Зал">
+                        </div>
+                      </div>
+                      <div class="gallery__mini-slide swiper-slide">
+                        <div class="gallery__mini-img">
+                          <img src="./img/halls/3.jpeg" alt="Караоке-Зал">
+                        </div>
+                      </div>
+                      <div class="gallery__mini-slide swiper-slide">
+                        <div class="gallery__mini-img">
+                          <img src="./img/halls/4.jpeg" alt="Караоке-Зал">
+                        </div>
+                      </div>
+                      <div class="gallery__mini-slide swiper-slide">
+                        <div class="gallery__mini-img">
+                          <img src="./img/halls/5.jpeg" alt="Караоке-Зал">
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="tab-content" data-tab="2">
+                <div class="gallery__slider gallery__slider2 swiper">
+                  <div class="gallery__wrapper swiper-wrapper">
+                    <div class="gallery__slide swiper-slide">
+                      <a class="gallery__img" href="./img/halls/2.jpeg" data-fslightbox="gallery">
+                        <img src="./img/halls/2.jpeg" alt="Караоке-Зал">
+                      </a>
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <a class="gallery__img" href="./img/halls/1.jpeg" data-fslightbox="gallery">
+                        <img src="./img/halls/1.jpeg" alt="Караоке-Зал">
+                      </a>
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <a class="gallery__img" href="./img/halls/3.jpeg" data-fslightbox="gallery">
+                        <img src="./img/halls/3.jpeg" alt="Караоке-Зал">
+                      </a>
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <a class="gallery__img" href="./img/halls/4.jpeg" data-fslightbox="gallery">
+                        <img src="./img/halls/4.jpeg" alt="Караоке-Зал">
+                      </a>
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <a class="gallery__img" href="./img/halls/5.jpeg" data-fslightbox="gallery">
+                        <img src="./img/halls/5.jpeg" alt="Караоке-Зал">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="gallery__mini-slider gallery__mini-slider2 swiper">
+                    <div class="gallery__mini-wrapper swiper-wrapper">
+                      <div class="gallery__mini-slide swiper-slide">
+                        <div class="gallery__mini-img">
+                          <img src="./img/halls/2.jpeg" alt="Караоке-Зал">
+                        </div>
+                      </div>
+                      <div class="gallery__mini-slide swiper-slide">
+                        <div class="gallery__mini-img">
+                          <img src="./img/halls/1.jpeg" alt="Караоке-Зал">
+                        </div>
+                      </div>
+                      <div class="gallery__mini-slide swiper-slide">
+                        <div class="gallery__mini-img">
+                          <img src="./img/halls/3.jpeg" alt="Караоке-Зал">
+                        </div>
+                      </div>
+                      <div class="gallery__mini-slide swiper-slide">
+                        <div class="gallery__mini-img">
+                          <img src="./img/halls/4.jpeg" alt="Караоке-Зал">
+                        </div>
+                      </div>
+                      <div class="gallery__mini-slide swiper-slide">
+                        <div class="gallery__mini-img">
+                          <img src="./img/halls/5.jpeg" alt="Караоке-Зал">
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="tab-content" data-tab="3">
+                <div class="gallery__slider gallery__slider3 swiper">
+                  <div class="gallery__wrapper swiper-wrapper">
+                    <div class="gallery__slide swiper-slide">
+                      <a class="gallery__img" href="./img/halls/3.jpeg" data-fslightbox="gallery">
+                        <img src="./img/halls/3.jpeg" alt="Караоке-Зал">
+                      </a>
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <a class="gallery__img" href="./img/halls/2.jpeg" data-fslightbox="gallery">
+                        <img src="./img/halls/2.jpeg" alt="Караоке-Зал">
+                      </a>
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <a class="gallery__img" href="./img/halls/3.jpeg" data-fslightbox="gallery">
+                        <img src="./img/halls/3.jpeg" alt="Караоке-Зал">
+                      </a>
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <a class="gallery__img" href="./img/halls/4.jpeg" data-fslightbox="gallery">
+                        <img src="./img/halls/4.jpeg" alt="Караоке-Зал">
+                      </a>
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <a class="gallery__img" href="./img/halls/5.jpeg" data-fslightbox="gallery">
+                        <img src="./img/halls/5.jpeg" alt="Караоке-Зал">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="gallery__mini-slider gallery__mini-slider3 swiper">
+                    <div class="gallery__mini-wrapper swiper-wrapper">
+                      <div class="gallery__mini-slide swiper-slide">
+                        <div class="gallery__mini-img">
+                          <img src="./img/halls/3.jpeg" alt="Караоке-Зал">
+                        </div>
+                      </div>
+                      <div class="gallery__mini-slide swiper-slide">
+                        <div class="gallery__mini-img">
+                          <img src="./img/halls/2.jpeg" alt="Караоке-Зал">
+                        </div>
+                      </div>
+                      <div class="gallery__mini-slide swiper-slide">
+                        <div class="gallery__mini-img">
+                          <img src="./img/halls/3.jpeg" alt="Караоке-Зал">
+                        </div>
+                      </div>
+                      <div class="gallery__mini-slide swiper-slide">
+                        <div class="gallery__mini-img">
+                          <img src="./img/halls/4.jpeg" alt="Караоке-Зал">
+                        </div>
+                      </div>
+                      <div class="gallery__mini-slide swiper-slide">
+                        <div class="gallery__mini-img">
+                          <img src="./img/halls/5.jpeg" alt="Караоке-Зал">
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="tab-content" data-tab="4">
+                <div class="gallery__slider gallery__slider4 swiper">
+                  <div class="gallery__wrapper swiper-wrapper">
+                    <div class="gallery__slide swiper-slide">
+                      <a class="gallery__img" href="./img/halls/4.jpeg" data-fslightbox="gallery">
+                        <img src="./img/halls/4.jpeg" alt="Караоке-Зал">
+                      </a>
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <a class="gallery__img" href="./img/halls/2.jpeg" data-fslightbox="gallery">
+                        <img src="./img/halls/2.jpeg" alt="Караоке-Зал">
+                      </a>
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <a class="gallery__img" href="./img/halls/3.jpeg" data-fslightbox="gallery">
+                        <img src="./img/halls/3.jpeg" alt="Караоке-Зал">
+                      </a>
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <a class="gallery__img" href="./img/halls/4.jpeg" data-fslightbox="gallery">
+                        <img src="./img/halls/4.jpeg" alt="Караоке-Зал">
+                      </a>
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <a class="gallery__img" href="./img/halls/5.jpeg" data-fslightbox="gallery">
+                        <img src="./img/halls/5.jpeg" alt="Караоке-Зал">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="gallery__mini-slider gallery__mini-slider4 swiper">
+                    <div class="gallery__mini-wrapper swiper-wrapper">
+                      <div class="gallery__mini-slide swiper-slide">
+                        <div class="gallery__mini-img">
+                          <img src="./img/halls/4.jpeg" alt="Караоке-Зал">
+                        </div>
+                      </div>
+                      <div class="gallery__mini-slide swiper-slide">
+                        <div class="gallery__mini-img">
+                          <img src="./img/halls/2.jpeg" alt="Караоке-Зал">
+                        </div>
+                      </div>
+                      <div class="gallery__mini-slide swiper-slide">
+                        <div class="gallery__mini-img">
+                          <img src="./img/halls/3.jpeg" alt="Караоке-Зал">
+                        </div>
+                      </div>
+                      <div class="gallery__mini-slide swiper-slide">
+                        <div class="gallery__mini-img">
+                          <img src="./img/halls/4.jpeg" alt="Караоке-Зал">
+                        </div>
+                      </div>
+                      <div class="gallery__mini-slide swiper-slide">
+                        <div class="gallery__mini-img">
+                          <img src="./img/halls/5.jpeg" alt="Караоке-Зал">
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery__adaptive--visible">
+              <div class="gallery__heading heading">
+                <h2 class="gallery__title heading__title">Наши залы</h2>
+                <p class="gallery__text heading__text">Ознакомтесь с атмосферой праздника </p>
+              </div>
+              <ul class="tab__controls">
+                <li class="tab__controls-item" data-tab="1">
+                  <button class="tab__controls-link-2 tab__controls-link--active-2" data-tab="1">
+                    HALL №1
+                  </button>
+                </li>
+                <li class="tab__controls-item" data-tab="2">
+                  <button class="tab__controls-link-2" data-tab="2">
+                    HALL №2
+                  </button>
+                </li>
+                <li class="tab__controls-item" data-tab="3">
+                  <button href="#" class="tab__controls-link-2" data-tab="3">
+                    HALL №3
+                  </button>
+                </li>
+                <li class="tab__controls-item" data-tab="4">
+                  <button href="#" class="tab__controls-link-2" data-tab="4">
+                    HALL №5
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <div class="stripes-container--main">
+        <div class="stripe stripe-main1"></div>
+        <div class="stripe stripe-main2"></div>
+        <div class="stripe stripe-main3"></div>
+        <div class="stripe stripe-main4"></div>
+
+        <section class="main__advantages advantages">
+          <div class="stripes__square-advantages"></div>
+          <div class="container">
+            <div class="advantages__heading heading">
+              <h2 class="advantages__title heading__title">наши Преимущества</h2>
+              <p class="advantages__text heading__text">Почему гости выбирают нас</p>
+            </div>
+            <div class="advantages__inner">
+              <div class="advantages__body">
+                <ul class="advantages__list">
+                  <li class="advantages__item advantages__item-1 item--gray">
+                    <div class="advantages__item-img">
+                      <img src="./img/icon/shirt.svg" alt="">
+                    </div>
+                    <h5 class="advantages__item-heading">Никакого дресс-контроля</h5>
+                  </li>
+                  <li class="advantages__item advantages__item-2 item--black">
+                    <div class="advantages__item-img">
+                      <img src="./img/icon/disk.svg" alt="">
+                    </div>
+                    <h5 class="advantages__item-heading">~ 40.000 песен в сет листе</h5>
+                    <p class="advantages__item-text">Более 50,000 студийных фонограмм
+                    </p>
+                    <p class="advantages__item-text">Ежемесячное обновления репертуара</p>
+                  </li>
+                  <li class="advantages__item advantages__item-3 item--gray">
+                    <div class="advantages__item-img">
+                      <img src="./img/icon/danser.svg" alt="">
+                    </div>
+                    <h5 class="advantages__item-heading">Индивидуальные залы</h5>
+                    <p class="advantages__item-text">Только Ваша компания</p>
+                  </li>
+                  <li class="advantages__item advantages__item-4 item--black">
+                    <div class="advantages__item-img">
+                      <img src="./img/icon/hend-money.svg" alt="">
+                    </div>
+                    <h5 class="advantages__item-heading">Без депозита</h5>
+                    <p class="advantages__item-text"><span>Мы не берем депозит</span></p>
+                    <p class="advantages__item-text">Оплата происходит за человека в час</p>
+                  </li>
+                  <li class="advantages__item advantages__item-5 item--gray">
+                    <div class="advantages__item-img">
+                      <img src="./img/icon/target.svg" alt="">
+                    </div>
+                    <h5 class="advantages__item-heading">В самом центре Москвы</h5>
+                    <p class="advantages__item-text">м. Лубянка</p>
+                  </li>
+                  <li class="advantages__item advantages__item-6 item--black">
+                    <div class="advantages__item-img">
+                      <img src="./img/icon/shampain.svg" alt="">
+                    </div>
+                    <h5 class="advantages__item-heading">Нет пробкового сбора</h5>
+                    <p class="advantages__item-text">Можно приносить с собой еду, напитки и алкоголь
+                      <span>без пробкового
+                        сбора</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="advantages__contact">
+                <div class="advantages__img">
+                  <img src="./img/microfone-small.png" alt="">
+                </div>
+                <a class="advantages__btn button" href="#">Забронировать зал</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        
+        <section class="main__booking booking">
+          <div class="stripes__square-booking"></div>
+          <div class="container">
+            <div class="booking__info">
+              <div class="booking__heading heading">
+                <h2 class="booking__title heading__title">Как забронировать зал?</h2>
+                <p class="booking__text heading__text">бронирование по шагам в чат-боте</p>
+              </div>
+              <div class="booking__nav">
+                <button class="booking__prev arrow">
+                  <svg width="11.862793" height="18.793640" viewBox="0 0 11.8628 18.7936" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <desc>
+                      Created with Pixso.
+                    </desc>
+                    <defs />
+                    <path id="Vector" d="M10.43 1.39L1.43 10.61M10.43 17.39L1.43 8.17" stroke="#606571"
+                      stroke-opacity="1.000000" stroke-width="4.000000" />
+                  </svg>
+                </button>
+                <div class="booking__pagination"></div>
+                <button class="booking__next arrow">
+                  <svg width="11.862793" height="18.793640" viewBox="0 0 11.8628 18.7936" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <desc>
+                      Created with Pixso.
+                    </desc>
+                    <defs />
+                    <path id="Vector" d="M1.43 1.39L10.43 10.61M1.43 17.39L10.43 8.17" stroke="#606571"
+                      stroke-opacity="1.000000" stroke-width="4.000000" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="booking__slider swiper">
+            <div class="booking__wrapper swiper-wrapper">
+              <div class="booking__slide swiper-slide">
+                <div class="booking__img">
+                  <img class="booking__img-slide" src="./img/slider/1.webp" alt="Скрин для ронирования">
+                  <img class="booking__img-frame" src="./img/icon/iphone-frame.png" alt="Рамка телефона">
+                </div>
+                <div class="booking__slide-name">
+                  <div class="booking__icon">
+                    <img src="./img/slider/icon1.svg" alt="">
+                  </div>
+                  <p class="booking__icon-text">Перейти в чат-бот <a href="#"><span>fh_harizma_bot</span></a></p>
+                </div>
+              </div>
+              <div class="booking__slide swiper-slide">
+                <div class="booking__img">
+                  <img class="booking__img-slide" src="./img/slider/2.webp" alt="Скрин для ронирования">
+                  <img class="booking__img-frame" src="./img/icon/iphone-frame.png" alt="Рамка телефона">
+                </div>
+                <div class="booking__slide-name">
+                  <div class="booking__icon">
+                    <img src="./img/slider/icon2.svg" alt="">
+                  </div>
+                  <p class="booking__icon-text">Выбрать
+                    колличество человек
+                  </p>
+                </div>
+              </div>
+              <div class="booking__slide swiper-slide">
+                <div class="booking__img">
+                  <img class="booking__img-slide" src="./img/slider/3.webp" alt="Скрин для ронирования">
+                  <img class="booking__img-frame" src="./img/icon/iphone-frame.png" alt="Рамка телефона">
+                </div>
+                <div class="booking__slide-name">
+                  <div class="booking__icon">
+                    <img src="./img/slider/icon3.svg" alt="">
+                  </div>
+                  <p class="booking__icon-text">Выбрать колличество часов посещения
+                  </p>
+                </div>
+              </div>
+              <div class="booking__slide swiper-slide">
+                <div class="booking__img">
+                  <img class="booking__img-slide" src="./img/slider/4.webp" alt="Скрин для ронирования">
+                  <img class="booking__img-frame" src="./img/icon/iphone-frame.png" alt="Рамка телефона">
+                </div>
+                <div class="booking__slide-name">
+                  <div class="booking__icon">
+                    <img src="./img/slider/icon4.svg" alt="">
+                  </div>
+                  <p class="booking__icon-text">Выбрать дату
+                  </p>
+                </div>
+              </div>
+              <div class="booking__slide swiper-slide">
+                <div class="booking__img">
+                  <img class="booking__img-slide" src="./img/slider/5.webp" alt="Скрин для ронирования">
+                  <img class="booking__img-frame" src="./img/icon/iphone-frame.png" alt="Рамка телефона">
+                </div>
+                <div class="booking__slide-name">
+                  <div class="booking__icon">
+                    <img src="./img/slider/icon5.svg" alt="">
+                  </div>
+                  <p class="booking__icon-text">Выбрать
+                    время старта брони
+                  </p>
+                </div>
+              </div>
+              <div class="booking__slide swiper-slide">
+                <div class="booking__img">
+                  <img class="booking__img-slide" src="./img/slider/6.webp" alt="Скрин для ронирования">
+                  <img class="booking__img-frame" src="./img/icon/iphone-frame.png" alt="Рамка телефона">
+                </div>
+                <div class="booking__slide-name">
+                  <div class="booking__icon">
+                    <img src="./img/slider/icon1.svg" alt="">
+                  </div>
+                  <p class="booking__icon-text">Выбрать
+                    колличество человек
+                  </p>
+                </div>
+              </div>
+              <div class="booking__slide swiper-slide">
+                <div class="booking__img">
+                  <img class="booking__img-slide" src="./img/slider/1.webp" alt="Скрин для ронирования">
+                  <img class="booking__img-frame" src="./img/icon/iphone-frame.png" alt="Рамка телефона">
+                </div>
+                <div class="booking__slide-name">
+                  <div class="booking__icon">
+                    <img src="./img/slider/icon2.svg" alt="">
+                  </div>
+                  <p class="booking__icon-text">Выбрать
+                    колличество человек
+                  </p>
+                </div>
+              </div>
+              <div class="booking__slide swiper-slide">
+                <div class="booking__img">
+                  <img class="booking__img-slide" src="./img/slider/2.webp" alt="Скрин для ронирования">
+                  <img class="booking__img-frame" src="./img/icon/iphone-frame.png" alt="Рамка телефона">
+                </div>
+                <div class="booking__slide-name">
+                  <div class="booking__icon">
+                    <img src="./img/slider/icon3.svg" alt="">
+                  </div>
+                  <p class="booking__icon-text">Выбрать
+                    колличество человек
+                  </p>
+                </div>
+              </div>
+              <div class="booking__slide swiper-slide">
+                <div class="booking__img">
+                  <img class="booking__img-slide" src="./img/slider/3.webp" alt="Скрин для ронирования">
+                  <img class="booking__img-frame" src="./img/icon/iphone-frame.png" alt="Рамка телефона">
+                </div>
+                <div class="booking__slide-name">
+                  <div class="booking__icon">
+                    <img src="./img/slider/icon4.svg" alt="">
+                  </div>
+                  <p class="booking__icon-text">Выбрать
+                    колличество человек
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </main>
+    <footer class="footer">
+      <div class="stripes-container">
+        <div class="stripe stripe-footer1"></div>
+        <div class="stripes__square-footer"></div>
+        <div class="stripe stripe-footer2"></div>
+        <div class="stripe stripe-footer3"></div>
+        <div class="stripe stripe-footer4"></div>
+      </div>
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__logo">
+            <img src="./img/icon/logo.svg" alt="">
+          </div>
+
+          <div class="footer__info--visible">
+            <div class="header__contacts">
+              <address class="header__contact header__tel">
+                <div class="header__img">
+                  <img src="./img/icon/fone.svg" alt="">
+                </div>
+                <a class="header__number" href="tel:+380979709090">
+                  +38 (097) 970-90-90
+                </a>
+              </address>
+              <address class="header__contact header__metro">
+                <div class="header__img">
+                  <img src="./img/icon/gps-mark.svg" alt="">
+                </div>
+                <span>м. Лубянка</span>
+              </address>
+            </div>
+            <div class="header__btns">
+              <a class="header__button button-empty" href="#">
+                Наши залы
+              </a>
+              <a class="header__button button-white" href="#">
+                Забронировать
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__contacts">
+            <address class="footer__contact">
+              <div class="footer__img">
+                <img src="./img/icon/fone.svg" alt="">
+              </div>
+              <a class="footer__number" href="tel:+380979709090">
+                +38 (097) 970-90-90
+              </a>
+            </address>
+            <div class="footer__contact">
+              <div class="footer__img">
+                <img src="./img/icon/calendar.svg" alt="">
+              </div>
+              <div class="footer__calendar">
+                Пн — Вс круглосуточно
+              </div>
+            </div>
+            <address class="footer__contact">
+              <div class="footer__img">
+                <img src="./img/icon/gps-mark.svg" alt="">
+              </div>
+              <span>м. Лубянка, ул. Сретенский переулок, 4</span>
+            </address>
+          </div>
+          <a class="footer__button" href="#">
+            Построить маршрут
+          </a>
+          <div class="footer__arrow">
+            Подняться вверх
+            <a class="footer__up arrow" href="#">
+              <img src="./img/icon/arrow-up.svg" alt="">
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+  </div>
+  <script src="./js/fslightbox.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
