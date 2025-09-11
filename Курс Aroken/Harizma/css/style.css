@@ -6,8 +6,6 @@
 
 /* =============================================== */
 
-.main__gallery {}
-
 .stripe-gallery {
   left: 21%;
   background-color: #ffc61909;
@@ -27,6 +25,7 @@
 
 .gallery__content {
   max-width: 640px;
+  /* padding-bottom: 30px; */
 }
 
 .tab__gallery {
@@ -37,7 +36,7 @@
 }
 
 .gallery__heading {
-  margin: 110px 0 60px;
+  margin: 80px 0 60px;
 }
 
 .tab__controls {
@@ -45,8 +44,6 @@
   gap: 30px;
   margin-bottom: 20px;
 }
-
-.tab__controls-item {}
 
 .tab__controls-link,
 .tab__controls-link-2 {
@@ -147,21 +144,11 @@
   color: #fff;
 }
 
-.gallery__next {}
-
-.gallery__button {}
-
 .gallery__slider {
   position: relative;
   max-width: 1407px;
   max-height: 1000px;
 }
-
-.gallery__wrapper {}
-
-.gallery__slide {}
-
-.gallery__img {}
 
 .gallery__img img {
   width: 100%;
@@ -174,12 +161,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-
 }
-
-.gallery__mini-slide {}
-
-
 
 .gallery__mini-img {
   cursor: pointer;
@@ -203,6 +185,7 @@
 }
 
 /* =============================================== */
+
 .stripes-container--main {
   position: relative;
 }
@@ -210,8 +193,6 @@
 .stripe-main1 {
   left: 21%;
 }
-
-
 
 .stripe-main2 {
   left: 40%;
@@ -226,6 +207,7 @@
 }
 
 /* =============================================== */
+
 .advantages {
   position: relative;
 }
@@ -233,20 +215,15 @@
 .stripes__square-advantages {
   position: absolute;
   top: 0;
-  width: 19vw;
   height: 100%;
   left: 40%;
+  right: 41%;
   background: linear-gradient(180deg, #60657100 0%, #6065710d 100%);
 }
 
 .advantages__heading {
   margin-bottom: 45px;
 }
-
-.advantages__title {}
-
-.advantages__text {}
-
 
 .advantages__inner {
   display: flex;
@@ -255,13 +232,10 @@
   z-index: 1;
 }
 
-.advantages__body {}
-
 .advantages__list {
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(3, 1fr);
   gap: 30px;
-
 }
 
 .advantages__item {
@@ -315,12 +289,9 @@
   flex-direction: column;
   align-items: center;
   margin-top: -140px;
-  background: url("../img/advantages-bg.png") 76% 50% no-repeat;
+  background: url("../img/bg.png") 76% 50% no-repeat;
   box-shadow: inset 0px -70px 80px 80px #191b20;
-
 }
-
-.advantages__img {}
 
 .advantages__img img {
   width: 100%;
@@ -338,15 +309,16 @@
 }
 
 .booking {
+  position: relative;
   background: var(--general-bg-black);
 }
 
 .stripes__square-booking {
   position: absolute;
   top: 0;
-  width: 19vw;
-  height: 100%;
+  bottom: 0;
   left: 21%;
+  right: 60%;
   background: linear-gradient(180deg, #60657100 0%, #6065710d 100%);
 }
 
@@ -356,10 +328,6 @@
   align-items: end;
   margin-bottom: 45px;
 }
-
-.booking__title {}
-
-.booking__text {}
 
 .booking__nav {
   display: flex;
@@ -415,11 +383,11 @@
 }
 
 .booking__img-frame {
-width: 100%;
-position: absolute;
-top: -12px;
-left: -14px;
-display: none;
+  width: 100%;
+  position: absolute;
+  top: -12px;
+  left: -14px;
+  display: none;
 }
 
 .swiper-slide-active .booking__img-frame {
@@ -432,7 +400,7 @@ display: none;
   width: 61px;
   height: 61px;
   top: -30px;
-    right: -10px;
+  right: -10px;
   box-shadow: 0px 12px 12px 0px #00000026;
   background: #f69020;
   align-items: center;
@@ -447,9 +415,6 @@ display: none;
   display: flex;
 }
 
-/* .swiper-slide-active .booking__img {
-  background: url("../img/icon/iphone-frame.png") 27% 50% no-repeat;
-} */
 
 .booking__slide-name {
   display: flex;
@@ -460,6 +425,10 @@ display: none;
 .booking__icon {
   width: 41px;
   height: 41px;
+}
+
+.booking__icon img {
+  width: 100%;
 }
 
 .booking__icon-text {
@@ -473,8 +442,151 @@ display: none;
   font-weight: 700;
 }
 
+/* ============================================== */
 
+.questions {
+  position: relative;
+}
 
+.stripes__square-questions {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 40%;
+  right: 41%;
+  background: linear-gradient(180deg, #60657100 0%, #6065710d 100%);
+}
+
+.questions__heading {
+  margin-bottom: 45px;
+}
+
+.questions__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.questions__accordion {
+  flex: 1;
+  width: 100%;
+}
+
+.accordion__item {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+.accordion__item:last-child {
+  margin-bottom: 0;
+}
+
+.accordion__control {
+  padding: 19px 25px;
+  width: 100%;
+  background: #282b32;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 133%;
+  transition: var(--transition);
+}
+
+.accordion__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  box-shadow: 0 9px 16px 0 rgba(0, 0, 0, 0.21);
+  background: #34373f;
+}
+
+.accordion__icon svg {
+  transition: var(--transition);
+}
+
+.accordion__icon path {
+  transition: var(--transition);
+}
+
+.accordion__item--opened .accordion__icon svg {
+  transform: rotate(180deg);
+}
+
+.accordion__item--opened .accordion__icon path {
+  stroke: #606571;
+}
+
+.accordion__text {
+  max-width: 870px;
+  font-size: 16px;
+  line-height: 194%;
+  color: #c5c5c5;
+  margin-left: 25px;
+  max-height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.accordion__text span {
+  display: block;
+}
+
+.accordion__item--opened .accordion__text {
+  margin-top: 24px;
+}
+
+.questions__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 162%;
+  position: relative;
+}
+
+.questions__content::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  left: -110px;
+  right: -140px;
+  bottom: 0px;
+  background: url(../img/bg-questions.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.8;
+  box-shadow: inset 0px 0px 182px 129px #191b20;
+}
+
+.questions__content span {
+  color: #f69020;
+}
+
+.questions__info {
+  max-width: 540px;
+}
+
+.questions__img {
+  max-width: 553px;
+}
+
+.questions__content img {
+  width: 100%;
+}
+
+.questions__button {
+  align-self: center;
+}
 
 /* ============================================== */
 /* ============================================== */
@@ -491,7 +603,6 @@ display: none;
 }
 
 @media (max-width: 1800px) {
-
 
   .advantages__inner {
     align-items: end;
@@ -530,36 +641,14 @@ display: none;
     margin-left: -56px;
   }
 
-  /* ====================================== */
-  .stripe-footer1 {
-    left: 13%;
-  }
-
-  .stripes__square-footer {
-    width: 22vw;
-    left: 13%;
-  }
-
-  .stripe-footer2 {
-    left: 35%;
-  }
-
-  .stripe-footer3 {
-    left: 61%;
-  }
-
-  .stripe-footer4 {
-    left: 84%;
-  }
-
   /* ======================================== */
   .stripe-main1 {
     left: 13%;
   }
 
-  .stripes__square-main {
-    width: 26vw;
+  .stripes__square-advantages {
     left: 35%;
+    right: 39%;
   }
 
   .stripe-main2 {
@@ -571,6 +660,40 @@ display: none;
   }
 
   .stripe-main4 {
+    left: 84%;
+  }
+
+  /* ====================================== */
+  .stripes__square-booking {
+    width: 22.2vw;
+    left: 13%;
+  }
+
+  /* ======================================== */
+  .stripes__square-questions {
+    left: 35%;
+    right: 39%;
+  }
+
+  /* ====================================== */
+  .stripe-footer1 {
+    left: 13%;
+  }
+
+  .stripes__square-footer {
+    left: 13%;
+    right: 65%;
+  }
+
+  .stripe-footer2 {
+    left: 35%;
+  }
+
+  .stripe-footer3 {
+    left: 61%;
+  }
+
+  .stripe-footer4 {
     left: 84%;
   }
 }
@@ -591,6 +714,9 @@ display: none;
   }
 
   /* ===================================== */
+  .main__footer {
+    padding-top: 50px;
+  }
 
   .footer__inner {
     align-items: start;
@@ -604,7 +730,7 @@ display: none;
   }
 
   .footer__arrow {
-    margin-top: 0;
+    margin-top: -85px;
   }
 
 }
@@ -750,7 +876,7 @@ display: none;
     left: 11%;
   }
 
-  .stripes__square-main {
+  .stripes__square-advantages {
     left: 35%;
     width: 26vw;
   }
@@ -767,6 +893,18 @@ display: none;
     margin-top: 0;
   }
 
+  /* =================================== */
+  .stripes__square-booking {
+    left: 11%;
+    width: 24vw;
+  }
+
+  /* ==================================== */
+  .stripes__square-questions {
+    left: 35%;
+    width: 26vw;
+  }
+
   /* ================================= */
   .stripe-footer1 {
     left: 11%;
@@ -775,6 +913,11 @@ display: none;
   .stripes__square-footer {
     width: 24vw;
     left: 11%;
+  }
+
+  /* ========================================== */
+  .questions__content {
+    font-size: 28px;
   }
 }
 
@@ -789,6 +932,7 @@ display: none;
     display: none;
   }
 
+  /* ======================================== */
   .stripe-gallery {
     display: none;
   }
@@ -815,6 +959,7 @@ display: none;
     margin-bottom: 30px;
   }
 
+  /* ========================================== */
   .advantages__item-heading {
     font-size: 14px;
   }
@@ -826,6 +971,12 @@ display: none;
   .advantages__item {
     padding: 25px 20px;
   }
+
+  /* ======================================= */
+  .questions__content {
+    max-width: 470px;
+  }
+
 }
 
 @media (max-width: 1200px) {
@@ -861,7 +1012,6 @@ display: none;
   }
 
   /* ================================== */
-
   .main__hero {
     padding-top: 60px;
   }
@@ -909,30 +1059,30 @@ display: none;
     width: 70px;
     height: 70px;
   }
+
   /* ========================================= */
   .main__booking {
     padding: 50px 0 150px;
   }
+
   .booking__info {
     flex-direction: column;
     align-items: start;
-}
-
-.booking__heading {
-  margin-bottom: 600px;
-}
-.booking__slider.swiper {
-  margin: -690px 0 0 0;
-  padding-left: 30px;
-}
-
-.booking__img img {
-  /* width: 206px; */
-}
-/* ============================================= */
-  .footer__button {
-    align-self: center;
   }
+
+  .booking__heading {
+    margin-bottom: 600px;
+  }
+
+  .booking__slider.swiper {
+    margin: -690px 0 0 -610px;
+  }
+
+  .booking__img-frame {
+    left: -12px;
+  }
+
+  /* ============================================= */
 
 }
 
@@ -988,7 +1138,6 @@ display: none;
   }
 
   /* ======================================== */
-
   .body--opened-menu .header__info {
     transform: translateY(0);
     opacity: 1;
@@ -1065,23 +1214,8 @@ display: none;
     height: 48px;
   }
 
-  .footer__inner {}
-
-  .footer__info--visible {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .footer__contacts {
-    display: none;
-  }
-
-  .footer__button {
-    display: none;
-  }
-
   /* ================================= */
-  .stripes__square-main {
+  .stripes__square-advantages {
     display: none;
   }
 
@@ -1095,7 +1229,7 @@ display: none;
   }
 
   .advantages__body {
-    background: url('../img/advantages-bg.png') 50% 50% / cover no-repeat;
+    background: url('../img/bg.png') 50% 52% / cover no-repeat;
     box-shadow: inset 0px -70px 80px 180px #191b20;
     margin-bottom: 50px;
   }
@@ -1110,6 +1244,74 @@ display: none;
   .advantages__btn.button {
     margin-left: 0;
     width: 300px;
+  }
+
+  /* ===================================== */
+  .stripes__square-booking {
+    display: none;
+  }
+
+  .booking__slider.swiper {
+    margin: -600px 0 0 -560px;
+  }
+
+  .booking__heading {
+    margin-bottom: 500px;
+  }
+
+  .booking__img {
+    max-width: 210px;
+  }
+
+  .booking__slide-name {
+    margin-top: 30px;
+    max-width: 190px;
+  }
+
+  .booking__icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .booking__icon-text {
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 10px;
+  }
+
+  /* ========================================= */
+  .stripes__square-questions {
+    display: none;
+  }
+
+  .questions__content {
+    font-size: 24px;
+  }
+
+  .questions__info {
+    max-width: 430px;
+  }
+
+  .questions__img {
+    max-width: 430px;
+  }
+
+  /* ====================================== */
+  .footer__arrow {
+    margin-top: 0;
+  }
+
+  .footer__info--visible {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__contacts {
+    display: none;
+  }
+
+  .footer__button {
+    display: none;
   }
 }
 
@@ -1159,9 +1361,22 @@ display: none;
   }
 
   /* ===================================== */
-
   .gallery__mini-img {
     max-height: 130px;
+  }
+
+  /* ====================================== */
+  .booking__slider.swiper {
+    margin-left: -490px;
+  }
+
+  /* ====================================== */
+  .questions__info {
+    max-width: 380px;
+  }
+
+  .questions__img {
+    max-width: 380px;
   }
 
 }
@@ -1277,6 +1492,60 @@ display: none;
   .advantages__list {
     gap: 15px;
   }
+
+  /* ====================================== */
+  .booking__title {
+    white-space: wrap;
+  }
+
+  .booking__slider.swiper {
+    margin-left: -430px;
+  }
+
+  /* ======================================= */
+  .questions__info {
+    max-width: 340px;
+  }
+
+  .questions__img {
+    max-width: 340px;
+  }
+
+}
+
+
+
+@media (max-width: 800px) {
+  .booking__slider.swiper {
+    margin-left: -320px;
+  }
+
+  /* ====================================== */
+  .main__questions {
+    padding: 50px 0 50px;
+  }
+
+  .questions__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .questions__content {
+    align-items: center;
+  }
+
+  .questions__info {
+    font-size: 20px;
+  }
+
+  .questions__button {
+    width: 323px;
+  }
+
+  /* ===================================== */
+  .main__footer {
+    padding-bottom: 15px;
+  }
 }
 
 @media (max-width: 750px) {
@@ -1363,6 +1632,26 @@ display: none;
     background: #282b32;
     grid-row: 3 / 4;
   }
+
+  /* ====================================== */
+  .booking__slider.swiper {
+    margin-left: -310px;
+  }
+
+  /* ==================================== */
+  .main__footer {
+    padding-bottom: 0;
+  }
+
+  .footer__inner {
+    grid-template: 1fr 1fr / 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .booking__slider.swiper {
+    margin-left: -260px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1421,10 +1710,44 @@ display: none;
   .advantages__item {
     padding: 20px 14px;
   }
+
+  /* ===================================== */
+  .booking__slider.swiper {
+    margin-left: -105px;
+  }
+
+  .booking__img-frame {
+    top: -10px;
+    left: -12px;
+  }
+
+  /* ======================================= */
+  .questions__title {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .questions__text {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .accordion__title {
+    font-size: 14px;
+  }
+
+  .questions__info {
+    font-size: 18px;
+  }
+
+  .questions__button {
+    width: 290px;
+    height: 50px;
+    font-size: 11px;
+  }
 }
 
 @media (max-width: 500px) {
-
   .stripe-header1 {
     display: none;
   }
@@ -1551,8 +1874,6 @@ display: none;
     position: relative;
   }
 
-  .advantages__contact {}
-
   .advantages__img {
     display: block;
     position: absolute;
@@ -1560,7 +1881,7 @@ display: none;
     left: 3%;
     opacity: 0.8;
     width: 183px;
-    background: url("../img/advantages-bg.png") 65% 52% / 360px 360px no-repeat;
+    background: url("../img/bg.png") 65% 52% / 360px 360px no-repeat;
     box-shadow: inset 0px -70px 90px 35px #191B20;
   }
 
@@ -1595,6 +1916,20 @@ display: none;
     display: none;
   }
 
+  /* ===================================== */
+  .heading__title {
+    font-size: 195%;
+    line-height: 48px;
+  }
+
+  .heading__text {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .booking__slider.swiper {
+    margin-left: -70px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -1631,6 +1966,21 @@ display: none;
   .advantages__item-6 {
     grid-row: span 18;
   }
+
+  /* ====================================== */
+  .booking__slider.swiper {
+    margin-left: -45px;
+  }
+
+  /* ===================================== */
+  .questions__title {
+    font-size: 25px;
+    line-height: 42px;
+  }
+
+  .heading__text {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 350px) {
@@ -1661,4 +2011,7 @@ display: none;
     left: -7%;
   }
 
+  .booking__slider.swiper {
+    margin-left: -35px;
+  }
 }

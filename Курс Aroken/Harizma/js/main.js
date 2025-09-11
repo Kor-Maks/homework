@@ -27,14 +27,12 @@
     tab.addEventListener("click", () => {
       const target = tab.getAttribute("data-tab");
 
-      // Убираем класс 'tab-content--show' у всех элементов
       tabs.forEach(t => t.classList.remove("tab-content--show"));
       descriptions.forEach(d => d.classList.remove("tab-content--show"));
       galleries.forEach(g => g.classList.remove("tab-content--show"));
       tabActive.forEach(a => a.classList.remove("tab__controls-link--active"));
       tabActive2.forEach(z => z.classList.remove("tab__controls-link--active-2"));
 
-      // Добавляем класс 'tab-content--show' к активным элементам
       tab.classList.add("tab-content--show");
       document.querySelector(`.gallery__param[data-tab="${target}"]`).classList.add("tab-content--show");
       document.querySelector(`.tab-content[data-tab="${target}"]`).classList.add("tab-content--show");
@@ -43,7 +41,7 @@
     });
   });
 
-  
+
 
   // Галерея ------------------------------
 
@@ -57,7 +55,6 @@
         return '<span class="' + currentClass + '"></span>' + '  из ' + '<span class="' + totalClass + '"></span>';
       },
     },
-    
 
     navigation: {
       nextEl: '.gallery__next',
@@ -89,6 +86,7 @@
     },
   });
 
+
   new Swiper('.gallery__slider3', {
     slidesPerView: 1,
 
@@ -104,6 +102,7 @@
       }
     },
   });
+
 
   new Swiper('.gallery__slider4', {
     slidesPerView: 1,
@@ -125,9 +124,8 @@
 
 
   new Swiper('.booking__slider', {
-    spaceBetween: 0,
-    slidesPerView: 3.3,
-    centeredSlides: false,
+    slidesPerView: 1.5,
+    centeredSlides: true,
     navigation: {
       nextEl: '.booking__next',
       prevEl: '.booking__prev',
@@ -141,36 +139,80 @@
     },
 
     breakpoints: {
-      
-      1201: {
-        centeredSlides: true,
+      400: {
+        slidesPerView: 1.7,
+      },
+      500: {
+        slidesPerView: 1.8,
+      },
+      600: {
+        slidesPerView: 3,
+      },
+      750: {
+        slidesPerView: 3.2,
+      },
+      800: {
+        slidesPerView: 4,
       },
       1441: {
         slidesPerView: 4.3,
       },
-      1901: {
+      1701: {
         slidesPerView: 5.3,
       },
     },
-    
+
 
     on: {
       slideChange: function () {
         const slides = document.querySelectorAll('.booking__slide');
         slides.forEach((slide, index) => {
-          const slideNumber = index + 1; // Номер слайда (начиная с 1)
+          const slideNumber = index + 1;
           slide.setAttribute('data-slide-number', slideNumber);
         });
       }
     }
   });
-  
-  // Инициализация номеров слайдов при загрузке страницы
+
   const slides = document.querySelectorAll('.booking__img');
   slides.forEach((slide, index) => {
     const slideNumber = index + 1; // Номер слайда (начиная с 1)
     slide.setAttribute('data-slide-number', slideNumber);
   });
 
-  
+  // ACCORDION====================================
+
+  const accordionLists = document.querySelectorAll('.accordion__list');
+
+  accordionLists.forEach(el => {
+
+    el.addEventListener('click', (e) => {
+
+      const accordionList = e.currentTarget;
+      const accordionOpenedItem = accordionList.querySelector('.accordion__item--opened');
+      const accordionOpenedContent = accordionList.querySelector('.accordion__item--opened .accordion__text');
+
+      const accordionControl = e.target.closest('.accordion__control');
+      e.preventDefault();
+      if (!accordionControl) return;
+
+      const accordionItem = accordionControl.parentElement;
+
+      const accordionContent = accordionControl.nextElementSibling;
+
+      if (accordionOpenedItem && accordionItem != accordionOpenedItem) {
+        accordionOpenedItem.classList.remove('accordion__item--opened');
+        accordionOpenedContent.style.maxHeight = null;
+      }
+
+      accordionItem.classList.toggle('accordion__item--opened');
+
+      if (accordionItem.classList.contains('accordion__item--opened')) {
+        accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+      }
+      else {
+        accordionContent.style.maxHeight = null;
+      }
+    });
+  });
 })()

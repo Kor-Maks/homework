@@ -1,5 +1,6 @@
 .footer {
   position: relative;
+  background:var(--general-bg-black);
 }
 
 .stripe-footer1 {
@@ -7,9 +8,10 @@
 }
 .stripes__square-footer {
   position: absolute;
-  width: 19vw;
   height: 100%;
   left: 21%;
+  right: 60%;
+
   background: linear-gradient(180deg, #60657100 0%, #6065710d 100%);
 }
 .stripe-footer2 {
@@ -26,7 +28,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 37px 0;
 }
 
 .footer__logo {
@@ -62,10 +63,6 @@ display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.footer__number {}
-
-.footer__calendar {}
 
 .footer__button {
   display: flex;

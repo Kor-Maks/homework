@@ -48,8 +48,6 @@
   width: 100%;
   height: 100%;
   pointer-events: none;
-  /* чтобы не мешали кликам */
-  z-index: -1000;
   overflow: hidden;
 }
 
@@ -60,6 +58,7 @@
   width: 2px;
   height: 100%;
   background-color: #ffffff06;
+  z-index: 1;
 }
 
 .main__hero {
@@ -68,6 +67,14 @@
 
 .main__advantages {
   padding: 100px 0;
+}
+
+.main__questions {
+  padding: 120px 0 95px;
+}
+
+.main__footer {
+  padding-bottom: 50px;
 }
 
 .heading {

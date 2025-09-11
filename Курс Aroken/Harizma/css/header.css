@@ -88,13 +88,6 @@
   justify-content: center;
 }
 
-
-.header__tel {}
-
-.header__number {
-
-}
-
 .header__metro {
   font-style: initial;
   color: var(--accent-text);
@@ -301,6 +294,7 @@
 .header__bottom {
   margin-top: -402px;
   position: relative;
+  z-index: 1;
 }
 
 .header__bottom-inner {
